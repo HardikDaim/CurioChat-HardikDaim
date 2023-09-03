@@ -38,6 +38,11 @@ export default function Chat() {
         "Curio: I can solve anything for you, including coding problems and identifying errors.",
       sender: "ChatGPT",
     },
+    {
+      message:
+        "Hello! Thank you for using our chatbot. Currently, our chatbot's backend services are undergoing maintenance and are temporarily unavailable. As a result, we regret to inform you that we cannot provide responses at this time.This is the frontend developed by me for enhancing my Development skills. Hope you appreciate it.",
+      sender: "ChatGPT",
+    }
   ]);
   const [isTyping, setIsTyping] = useState(false);
 
@@ -84,7 +89,7 @@ export default function Chat() {
         ...apiMessages, // The messages from our chat with ChatGPT
       ],
     };
-    const API_KEY = "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";
+    const API_KEY = "";
     const apiEndpoint = "https://api.openai.com/v1/engines/gpt-3.5-turbo/completions";
 
     
